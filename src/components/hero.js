@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class Hero extends Component {
   state = {
-    backgroundVideo: "https://app.coverr.co/s3/mp4/Scroll-It.mp4",
+    backgroundVideo: "https://app.coverr.co/s3/mp4/Hello-World.mp4",
     backgroundVideoType: "video/mp4"
   };
 
