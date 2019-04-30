@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import "../App.css";
 
 import Hero from "./hero";
 
@@ -14,24 +16,24 @@ class Home extends Component {
               <div class="col-md-8 mx-auto text-center">
                 <nav class="nav justify-content-center">
                   <li class="nav-item">
-                    <a href="#" class="nav-link display-4">
-                      Skills
-                    </a>
+                    <Link to="/skills">
+                      <span class="nav-link display-4">Skills</span>
+                    </Link>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link display-4">
-                      Projecten
-                    </a>
+                    <Link to="/projecten">
+                      <span class="nav-link display-4">Projecten</span>
+                    </Link>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link display-4">
-                      Blog
-                    </a>
+                    <Link to="/blog">
+                      <span class="nav-link display-4">Blog</span>
+                    </Link>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link display-4">
-                      Contact
-                    </a>
+                    <Link to="/contact">
+                      <span class="nav-link display-4">Contact</span>
+                    </Link>
                   </li>
                 </nav>
               </div>
