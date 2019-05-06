@@ -1,12 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Header extends Component {
-  state = {  }
-  render() { 
-    return ( 
-      
-     );
+  render() {
+    return (
+      <header class="navbar navbar-expand">
+        <span class="navbar-brand">Test</span>
+      </header>
+    );
   }
 }
- 
+
 export default Header;

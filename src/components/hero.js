@@ -8,7 +8,7 @@ class Hero extends Component {
 
   render() {
     return (
-      <header>
+      <div class="hero">
         <div class="overlay" />
         <video
           playsinline="playsinline"
@@ -31,7 +31,7 @@ class Hero extends Component {
             </div>
           </div>
         </div>
-      </header>
+      </div>
     );
   }
 }
