@@ -1,7 +1,9 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
-import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
+import "./App.css";
 
 import Home from "./components/home";
 import Skills from "./components/skills";

@@ -56,22 +56,39 @@ header {
   z-index: 1;
 }
 
-.display-4 {
-  font-size: 2.5rem;
-  color: var(--main-black);
-  transition-property: font-size, text-shadow, background-color;
-  transition-duration: 1s;
-  transition-timing-function: ease-out;
+.navbar {
+  background-color: var(--main-gray);
+}
+
+.nav-link {
+  color: var(--main-white);
+}
+
+.navbar-brand {
+  color: var(--main-blue);
+  font-weight: bold;
+}
+
+.nav-link.active {
+  color: var(--main-yellow);
 }
 
 .nav-item a {
   text-decoration: none;
 }
 
-.nav-item:hover .nav-link {
+.home-nav-item:hover .nav-link {
   font-size: 3em;
   text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
     0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+.display-4 {
+  font-size: 2.5rem;
+  color: var(--main-black);
+  transition-property: font-size, text-shadow, background-color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
 }
 
 .copyright-footer {

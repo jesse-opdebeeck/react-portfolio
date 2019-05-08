@@ -15,24 +15,30 @@ class Home extends Component {
             <div class="row">
               <div class="col-md-8 mx-auto text-center">
                 <nav class="nav justify-content-center">
-                  <li class="nav-item">
+                  <li class="nav-item home-nav-item">
                     <Link to="/skills">
-                      <span class="nav-link display-4">Skills</span>
+                      <span class="nav-link home-nav-link display-4">
+                        Skills
+                      </span>
                     </Link>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item home-nav-item">
                     <Link to="/projecten">
-                      <span class="nav-link display-4">Projecten</span>
+                      <span class="nav-link home-nav-link display-4">
+                        Projecten
+                      </span>
                     </Link>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item home-nav-item">
                     <Link to="/blog">
-                      <span class="nav-link display-4">Blog</span>
+                      <span class="nav-link home-nav-link display-4">Blog</span>
                     </Link>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item home-nav-item">
                     <Link to="/contact">
-                      <span class="nav-link display-4">Contact</span>
+                      <span class="nav-link home-nav-link display-4">
+                        Contact
+                      </span>
                     </Link>
                   </li>
                 </nav>
