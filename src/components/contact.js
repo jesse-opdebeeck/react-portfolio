@@ -1,9 +1,17 @@
 import React, { Component } from "react";
+import Header from "../components/header";
 
 class Contact extends Component {
   state = {};
   render() {
-    return <h1>Contact</h1>;
+    return (
+      <React.Fragment>
+        <Header title="Contact" />
+        <div class="container">
+          <h1 class="my-4">Contact</h1>
+        </div>
+      </React.Fragment>
+    );
   }
 }
 

@@ -39,7 +39,7 @@ class Projects extends Component {
 
           <div class="row">
             <div class="col-md-3 col-sm-6 mb-4">
-              <a href="#">
+              <a href="http://hoehel.be/">
                 <img
                   class="img-fluid"
                   src="http://placehold.it/500x300"
@@ -49,7 +49,7 @@ class Projects extends Component {
             </div>
 
             <div class="col-md-3 col-sm-6 mb-4">
-              <a href="#">
+              <a href="http://hoehel.be/">
                 <img
                   class="img-fluid"
                   src="http://placehold.it/500x300"
@@ -59,7 +59,7 @@ class Projects extends Component {
             </div>
 
             <div class="col-md-3 col-sm-6 mb-4">
-              <a href="#">
+              <a href="http://hoehel.be/">
                 <img
                   class="img-fluid"
                   src="http://placehold.it/500x300"
@@ -69,7 +69,7 @@ class Projects extends Component {
             </div>
 
             <div class="col-md-3 col-sm-6 mb-4">
-              <a href="#">
+              <a href="http://hoehel.be/">
                 <img
                   class="img-fluid"
                   src="http://placehold.it/500x300"

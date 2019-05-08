@@ -8,7 +8,7 @@ import "./App.css";
 import Home from "./components/home";
 import Skills from "./components/skills";
 import Projects from "./components/projects";
-import Contact from "./components/projects";
+import Contact from "./components/contact";
 import Blog from "./components/blog";
 import NotFound from "./components/404";
 

@@ -70,11 +70,15 @@ header {
 }
 
 .nav-link.active {
-  color: var(--main-yellow);
+  color: var(--main-blue);
 }
 
 .nav-item a {
   text-decoration: none;
+}
+
+.nav-item:hover .nav-link {
+  color: var(--main-blue);
 }
 
 .home-nav-item:hover .nav-link {
