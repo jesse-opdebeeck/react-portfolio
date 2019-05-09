@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
+import Navbar from "react-bootstrap/Navbar";
+
 class Header extends Component {
   render() {
     return (
-      <header class="navbar navbar-expand">
+      <Navbar>
         <span class="navbar-brand">J</span>
         <button
           class="navbar-toggler"
@@ -71,7 +73,7 @@ class Header extends Component {
           </ul>
           <span class="navbar-text text-muted">{this.props.title}</span>
         </div>
-      </header>
+      </Navbar>
     );
   }
 }
