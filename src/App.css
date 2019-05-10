@@ -62,9 +62,7 @@ header {
 
 .headernavitem .nav-link {
   color: var(--main-white);
-  /*transition-property: border-width;
-  transition-duration: 1s;
-  transition-timing-function: ease-out;*/
+  padding: 10px;
 }
 
 .navbar-brand {
@@ -82,6 +80,7 @@ header {
 
 .nav-item:hover .nav-link {
   color: var(--main-white);
+  padding: 8px;
   border-bottom: 1px solid var(--main-blue);
   border-top: 1px solid var(--main-blue);
 }
