@@ -1,79 +1,79 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-import Navbar from "react-bootstrap/Navbar";
-
 class Header extends Component {
   render() {
     return (
-      <Navbar>
-        <span class="navbar-brand">J</span>
+      <header className="navbar navbar-expand-lg headernavbar">
+        <a className="navbar-brand" href="/">
+          Jesse
+        </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarText"
-          aria-controls="navbarText"
+          aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon" />
+          <span className="navbar-toggler-icon" />
         </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <Link className="nav-link" to="/">
+        <div className="collapse navbar-collapse" id="navbarText">
+          <ul className="navbar-nav headernav mr-auto">
+            <li className="nav-item headernavitem">
+              <Link to="/" className="nav-link">
                 Home
               </Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item headernavitem">
               <Link
+                to="/skills"
                 className={
                   this.props.title === "Skills" ? "nav-link active" : "nav-link"
                 }
-                to="/skills"
               >
                 Skills
               </Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item headernavitem">
               <Link
+                to="/projecten"
                 className={
                   this.props.title === "Projecten"
                     ? "nav-link active"
                     : "nav-link"
                 }
-                to="/projecten"
               >
                 Projecten
               </Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item headernavitem">
               <Link
+                to="/blog"
                 className={
                   this.props.title === "Blog" ? "nav-link active" : "nav-link"
                 }
-                to="/blog"
               >
                 Blog
               </Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item headernavitem">
               <Link
+                to="/contact"
                 className={
                   this.props.title === "Contact"
                     ? "nav-link active"
                     : "nav-link"
                 }
-                to="/contact"
               >
                 Contact
               </Link>
             </li>
           </ul>
-          <span class="navbar-text text-muted">{this.props.title}</span>
+          <span className="navbar-text">Placeholder</span>
         </div>
-      </Navbar>
+      </header>
     );
   }
 }

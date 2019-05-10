@@ -56,19 +56,19 @@ header {
   z-index: 1;
 }
 
-.navbar {
+.headernavbar {
   background-color: var(--main-gray);
 }
 
-.nav-link {
+.headernavitem .nav-link {
   color: var(--main-white);
-  transition-property: border-width;
+  /*transition-property: border-width;
   transition-duration: 1s;
-  transition-timing-function: ease-out;
+  transition-timing-function: ease-out;*/
 }
 
 .navbar-brand {
-  color: var(--main-blue);
+  color: var(--main-white);
   font-weight: bold;
 }
 
