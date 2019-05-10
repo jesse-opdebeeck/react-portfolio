@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "../components/header";
+import { SocialIcon } from "react-social-icons";
 
 class Contact extends Component {
   state = {};
@@ -30,11 +31,11 @@ class Contact extends Component {
           </div>
           <div class="row">
             <div class="col-md-6 mb-5">
-              <div class="card h-100">
+              <div class="card h-100 contact-card">
                 <div class="card-body">
                   <h2 class="card-title">Direct bericht</h2>
                   <p class="card-text">Geef hier een snel berichtje in!</p>
-                  <form>
+                  <form className="contact-dm-form">
                     <textarea
                       className="form-control"
                       rows="3"
@@ -62,14 +63,40 @@ class Contact extends Component {
               </div>
             </div>
             <div class="col-md-6 mb-5">
-              <div class="card h-100">
+              <div class="card contact-card">
                 <div class="card-body">
                   <h2 class="card-title">Social media</h2>
-                  <ul>
-                    <li>Test 1</li>
-                    <li>Test 2</li>
-                    <li>Test 3</li>
-                  </ul>
+                  <SocialIcon
+                    url="http://www.facebook.com/jesseodb"
+                    target="_blank"
+                    style={{ height: 40, width: 40 }}
+                    className="mx-2"
+                  />
+                  <SocialIcon
+                    url="https://www.linkedin.com/in/jesse-op-de-beeck-0b6080161/"
+                    target="_blank"
+                    style={{ height: 40, width: 40 }}
+                    className="mx-2"
+                  />
+                  <SocialIcon
+                    url="https://twitter.com/tisdejesse"
+                    target="_blank"
+                    style={{ height: 40, width: 40 }}
+                    className="mx-2"
+                  />
+                  <SocialIcon
+                    url="https://www.youtube.com/channel/UC7cPa2jx1mBavVaVzQnWCUw"
+                    target="_blank"
+                    style={{ height: 40, width: 40 }}
+                    className="mx-2"
+                  />
+                  <SocialIcon
+                    url="https://github.com/jesse-opdebeeck"
+                    target="_blank"
+                    style={{ height: 40, width: 40 }}
+                    className="mx-2"
+                    bgColor="#00"
+                  />
                 </div>
               </div>
             </div>
