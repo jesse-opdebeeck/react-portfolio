@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "../components/header";
 import { SocialIcon } from "react-social-icons";
+import callmeup from "../img/callmeup.jpg";
 
 class Contact extends Component {
   state = {};
@@ -12,9 +13,9 @@ class Contact extends Component {
           <div class="row align-items-center my-5">
             <div class="col-lg-7">
               <img
-                class="img-fluid rounded mb-4 mb-lg-0"
-                src="http://placehold.it/900x400"
-                alt=""
+                class="img-fluid rounded mb-4 mb-lg-0 callmeup"
+                src={callmeup}
+                alt="Bel me op!"
               />
             </div>
             <div class="col-lg-5">
