@@ -8,7 +8,72 @@ class Contact extends Component {
       <React.Fragment>
         <Header title="Contact" />
         <div class="container">
-          <h1 class="my-4">Contact</h1>
+          <div class="row align-items-center my-5">
+            <div class="col-lg-7">
+              <img
+                class="img-fluid rounded mb-4 mb-lg-0"
+                src="http://placehold.it/900x400"
+                alt=""
+              />
+            </div>
+            <div class="col-lg-5">
+              <h1 class="font-weight-light">Contacteer mij</h1>
+              <p>
+                Genoeg gezien? Uiteraard staat u te popelen om met mij in
+                contact te komen! Klik op deze knop om uw e-mailprogramma te
+                openen, of bekijk onderaan de andere opties.
+              </p>
+              <a class="btn btn-primary" href="mailto:jesseodb@hotmail.com">
+                Open mijn e-mail!
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-5">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title">Direct bericht</h2>
+                  <p class="card-text">Geef hier een snel berichtje in!</p>
+                  <form>
+                    <textarea
+                      className="form-control"
+                      rows="3"
+                      placeholder="Uw bericht"
+                    />
+                    <br />
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Uw e-mailadres of telefoonnummer"
+                    />
+                    <small class="form-text text-muted">
+                      Hoe kan ik u beantwoorden?
+                    </small>
+                    <br />
+                    <button
+                      href="#"
+                      class="btn btn-primary btn-md"
+                      type="submit"
+                    >
+                      Verstuur
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-5">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title">Social media</h2>
+                  <ul>
+                    <li>Test 1</li>
+                    <li>Test 2</li>
+                    <li>Test 3</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </React.Fragment>
     );
