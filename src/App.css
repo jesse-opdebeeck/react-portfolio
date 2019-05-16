@@ -102,6 +102,22 @@ header {
   transition-timing-function: ease-out;
 }
 
+.contact-dm-form textarea {
+  text-align: center;
+}
+
+.contact-dm-form input {
+  text-align: center;
+}
+
+.contact-card {
+  text-align: center;
+}
+
+.contact-socials-list li {
+  list-style-type: none;
+}
+
 .copyright-footer {
   position: relative;
   width: 100%;
