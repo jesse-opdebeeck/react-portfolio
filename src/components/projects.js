@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Header from "./header";
 
-const projects = {
-  0: {
+const projects = [
+  {
     title: "Website Komik Toneel",
     description:
       "De huidige website van amateur toneelgroep Komik Toneel (waar ik zelf ook bij speel) is volledig door mij gemaakt. Begonnen van nul heb ik er een volledig CMS en reservatiesysteem in gestoken.",
@@ -16,7 +16,7 @@ const projects = {
     ].map(detail => <li>{detail}</li>),
     image: "https://i.imgur.com/9KwQhgm.jpg"
   },
-  1: {
+  {
     title: "Studentenjob @ Beego",
     description:
       "Gedurende een maand heb ik bij Beego gewerkt, waar men studenten naar mensen thuis stuurt om hen te helpen met hun computerproblemen. Hier heb ik veel bijgeleerd rond zowel hardware als software.",
@@ -27,7 +27,7 @@ const projects = {
     ].map(detail => <li>{detail}</li>),
     image: "https://i.imgur.com/gOYvWIv.png"
   },
-  2: {
+  {
     title: "Stage @ HQ",
     description:
       "Bij de start-up HQ heb ik een maand lang stage gelopen en mogen meewerken aan hun website binnen de bedrijfscultuur. Een enorm leerrijke ervaring waarin ik React heb geleerd en heb kunnen genieten van hoe het eraan toe gaat in de werkwereld.",
@@ -40,7 +40,7 @@ const projects = {
     ].map(detail => <li>{detail}</li>),
     image: "https://i.imgur.com/fdmzr9V.png"
   },
-  3: {
+  {
     title: "Studentenjob @ SDWorx",
     description:
       "Tweemaal werkte ik als student bij SDWorx op de Brouwersvliet in Antwerpen. Het eerste jaar was dit als medewerker op de Facility afdeling, en het tweede jaar bij Corporate HR voor administratieve taken.",
@@ -51,7 +51,7 @@ const projects = {
     ].map(detail => <li>{detail}</li>),
     image: "https://i.imgur.com/ZLqgcqJ.png"
   },
-  4: {
+  {
     title: "Infographic CV",
     description:
       "Een CV is natuurlijk veel interessanter in de vorm van een leuke infographic, en als thema ervoor koos ik de beroemdste fantasy-trilogie in de wereld.",
@@ -60,7 +60,7 @@ const projects = {
     ),
     image: "https://i.imgur.com/moqdt77.png"
   },
-  5: {
+  {
     title: "Videopitch",
     description:
       "Welke betere manier om mezelf voor te stellen dan een korte video over mezelf? Het is gemaakt in het formaat van een interview en ik leg er mijn beste capaciteiten in uit.",
@@ -72,7 +72,7 @@ const projects = {
     ].map(detail => <li>{detail}</li>),
     image: "https://i.imgur.com/4MHSYsr.jpg"
   },
-  6: {
+  {
     title: "Helpsessies Dienstencentrum Olijftak",
     description:
       "Tijdens mijn Se-n-Se jaar in Antwerpen hielden we drie verschillende helpdesk-sessies in het dienstencentrum de Olijftak in Borgerhout. Hier hielpen we de senioren met hun vragen over technologie.",
@@ -84,7 +84,7 @@ const projects = {
     ].map(detail => <li>{detail}</li>),
     image: "https://i.imgur.com/dZYC3AX.png"
   }
-};
+];
 
 function ProjectList(props) {
   const projects = props.projects;
