@@ -102,6 +102,9 @@ header {
   transition-timing-function: ease-out;
 }
 
+.project-img-full {
+}
+
 .contact-dm-form textarea {
   text-align: center;
 }

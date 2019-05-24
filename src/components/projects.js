@@ -1,6 +1,14 @@
 import React, { Component } from "react";
 import Header from "./header";
 
+import KomikImg from "../img/project-komik.jpg";
+import BeegoImg from "../img/project-beego.jpg";
+import HqImg from "../img/project-hq.jpg";
+import SdworxImg from "../img/project-sdworx.png";
+import CvImg from "../img/project-cv.png";
+import PitchImg from "../img/project-pitch.jpg";
+import OlijfImg from "../img/project-olijf.png";
+
 const projects = [
   {
     title: "Website Komik Toneel",
@@ -14,7 +22,7 @@ const projects = [
       "Eigen CMS",
       "Reservatiesysteem"
     ].map(detail => <li>{detail}</li>),
-    image: "https://i.imgur.com/9KwQhgm.jpg"
+    image: KomikImg // https://i.imgur.com/9KwQhgm.jpg
   },
   {
     title: "Studentenjob @ Beego",
@@ -25,7 +33,7 @@ const projects = [
       "Antwerpen en omstreken",
       "Ongeveer 20 mensen geholpen"
     ].map(detail => <li>{detail}</li>),
-    image: "https://i.imgur.com/gOYvWIv.png"
+    image: BeegoImg // https://i.imgur.com/gOYvWIv.png
   },
   {
     title: "Stage @ HQ",
@@ -38,7 +46,7 @@ const projects = [
       "React",
       "Javascript"
     ].map(detail => <li>{detail}</li>),
-    image: "https://i.imgur.com/fdmzr9V.png"
+    image: HqImg // https://i.imgur.com/fdmzr9V.png
   },
   {
     title: "Studentenjob @ SDWorx",
@@ -49,7 +57,7 @@ const projects = [
       "Facility klusjes",
       "Administratie Corporate HR"
     ].map(detail => <li>{detail}</li>),
-    image: "https://i.imgur.com/ZLqgcqJ.png"
+    image: SdworxImg // https://i.imgur.com/ZLqgcqJ.png
   },
   {
     title: "Infographic CV",
@@ -58,7 +66,7 @@ const projects = [
     details: ["Photoshop & Illustrator", "Volledig in thema"].map(
       detail => "<li>" + { detail } + "</li>"
     ),
-    image: "https://i.imgur.com/moqdt77.png"
+    image: CvImg // https://i.imgur.com/moqdt77.png
   },
   {
     title: "Videopitch",
@@ -70,7 +78,7 @@ const projects = [
       "Eigen editing",
       "Geweldige muziek"
     ].map(detail => <li>{detail}</li>),
-    image: "https://i.imgur.com/4MHSYsr.jpg"
+    image: PitchImg // https://i.imgur.com/4MHSYsr.jpg
   },
   {
     title: "Helpsessies Dienstencentrum Olijftak",
@@ -82,13 +90,19 @@ const projects = [
       "Presentatie over passwords",
       "Accounts opzetten"
     ].map(detail => <li>{detail}</li>),
-    image: "https://i.imgur.com/dZYC3AX.png"
+    image: OlijfImg // https://i.imgur.com/dZYC3AX.png
   }
 ];
 
 function ProjectList(props) {
   const projects = props.projects;
-  const projectItems = projects.map(project => <h1>Test</h1>);
+  const projectItems = projects.map(project => (
+    <div class="col-3 col-md-3 col-sm-6 mb-4">
+      <a href="#">
+        <img class="img-fluid" src="http://placehold.it/500x300" alt="" />
+      </a>
+    </div>
+  ));
 
   return <ul>{projectItems}</ul>;
 }
@@ -113,9 +127,12 @@ class Projects extends Component {
           <div className="row">
             <div className="col-md-8">
               <img
-                className="img-fluid"
+                className="img-fluid project-img-full"
                 src={projects[this.state.currentProjectIndex]["image"]}
-                alt=""
+                alt={
+                  projects[this.state.currentProjectIndex]["title"] +
+                  " afbeelding"
+                }
               />
             </div>
 
@@ -129,7 +146,6 @@ class Projects extends Component {
 
           <h3 className="my-4">Alle projecten</h3>
 
-          <div className="row" />
           <ProjectList projects={projects} />
         </div>
       </React.Fragment>
