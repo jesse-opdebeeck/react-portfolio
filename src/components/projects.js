@@ -97,14 +97,14 @@ const projects = [
 function ProjectList(props) {
   const projects = props.projects;
   const projectItems = projects.map(project => (
-    <div class="col-3 col-md-3 col-sm-6 mb-4">
+    <div class="col-md-3 col-sm-6 mb-4">
       <a href="#">
-        <img class="img-fluid" src="http://placehold.it/500x300" alt="" />
+        <img class="img-fluid" src={project.image} alt="" />
       </a>
     </div>
   ));
 
-  return <ul>{projectItems}</ul>;
+  return <div class="row">{projectItems}</div>;
 }
 
 class Projects extends Component {
@@ -145,7 +145,6 @@ class Projects extends Component {
           </div>
 
           <h3 className="my-4">Alle projecten</h3>
-
           <ProjectList projects={projects} />
         </div>
       </React.Fragment>
