@@ -106,11 +106,7 @@ function ProjectList(props) {
   const projectItems = projects.map(project => (
     <div className="col-md-3 col-sm-6 mb-4" key={project.key}>
       <a href="javascript:void(0)">
-        <img
-          className="img-fluid"
-          src={project.image}
-          alt={"afbeelding " + project.title}
-        />
+        <img className="img-fluid" src={project.image} alt={project.title} />
       </a>
     </div>
   ));
@@ -140,10 +136,7 @@ class Projects extends Component {
               <img
                 className="img-fluid project-img-full"
                 src={projects[this.state.currentProjectIndex]["image"]}
-                alt={
-                  projects[this.state.currentProjectIndex]["title"] +
-                  " afbeelding"
-                }
+                alt={projects[this.state.currentProjectIndex]["title"]}
               />
             </div>
 
