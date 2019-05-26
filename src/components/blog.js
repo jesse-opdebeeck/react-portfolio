@@ -14,7 +14,7 @@ class Blog extends Component {
                 <img
                   class="card-img-top"
                   src="http://placehold.it/750x300"
-                  alt="Card image cap"
+                  alt="Card cap"
                 />
                 <div class="card-body">
                   <h2 class="card-title">Blogpost 1</h2>
@@ -24,7 +24,7 @@ class Blog extends Component {
                     laboriosam. Dicta expedita corporis animi vero voluptate
                     voluptatibus possimus, veniam magni quis!
                   </p>
-                  <a href="#" class="btn btn-primary">
+                  <a href="http://hoehel.be/" class="btn btn-primary">
                     Verderlezen &rarr;
                   </a>
                 </div>
@@ -36,7 +36,7 @@ class Blog extends Component {
                 <img
                   class="card-img-top"
                   src="http://placehold.it/750x300"
-                  alt="Card image cap"
+                  alt="Card cap"
                 />
                 <div class="card-body">
                   <h2 class="card-title">Blogpost 2</h2>
@@ -46,7 +46,7 @@ class Blog extends Component {
                     laboriosam. Dicta expedita corporis animi vero voluptate
                     voluptatibus possimus, veniam magni quis!
                   </p>
-                  <a href="#" class="btn btn-primary">
+                  <a href="http://hoehel.be/" class="btn btn-primary">
                     Read More &rarr;
                   </a>
                 </div>
@@ -58,7 +58,7 @@ class Blog extends Component {
                 <img
                   class="card-img-top"
                   src="http://placehold.it/750x300"
-                  alt="Card image cap"
+                  alt="Card cap"
                 />
                 <div class="card-body">
                   <h2 class="card-title">Blogpost 3</h2>
@@ -68,7 +68,7 @@ class Blog extends Component {
                     laboriosam. Dicta expedita corporis animi vero voluptate
                     voluptatibus possimus, veniam magni quis!
                   </p>
-                  <a href="#" class="btn btn-primary">
+                  <a href="http://hoehel.be/" class="btn btn-primary">
                     Read More &rarr;
                   </a>
                 </div>
@@ -78,12 +78,12 @@ class Blog extends Component {
               </div>
               <ul class="pagination justify-content-center mb-4">
                 <li class="page-item">
-                  <a class="page-link" href="#">
+                  <a class="page-link" href="http://hoehel.be/">
                     &larr; Nieuwer
                   </a>
                 </li>
                 <li class="page-item disabled">
-                  <a class="page-link" href="#">
+                  <a class="page-link" href="http://hoehel.be/">
                     Ouder &rarr;
                   </a>
                 </li>
