@@ -9,7 +9,7 @@ class Opleidingen extends Component {
           <span>Opleiding</span>
         </h2>
         <div className="row">
-          <Fade delay={500}>
+          <Fade delay={250}>
             <div className="col-lg-4">
               <div className="card mb-5 mb-lg-0 text-center">
                 <div className="card-body">
@@ -64,7 +64,7 @@ class Opleidingen extends Component {
               </div>
             </div>
           </Fade>
-          <Fade delay={1500}>
+          <Fade delay={1750}>
             <div className="col-lg-4">
               <div className="card mb-5 mb-lg-0 text-center">
                 <div className="card-body">

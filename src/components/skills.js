@@ -8,6 +8,7 @@ import Ervaringen from "./skills/ervaringen";
 import Hobbys from "./skills/hobbys";
 import Technologie from "./skills/technologie";
 import Code from "./skills/code";
+import Troll from "./skills/troll";
 
 class Skills extends Component {
   state = {};
@@ -16,7 +17,7 @@ class Skills extends Component {
       <React.Fragment>
         <Header title="Skills" />
         <div className="container-fluid">
-          <div className="jumbotron my-5">
+          <div className="my-5 text-center col-6 mx-auto">
             <Fade>
               <h1 className="display-3">Jesse Op de Beeck</h1>
               <p className="lead">
@@ -43,6 +44,8 @@ class Skills extends Component {
               <p className="fa fa-arrow-down fa-2x my-5" href="#" />
             </div>
           </Bounce>
+          <br className="my-5" />
+          <Troll />
           <br className="my-5" />
           <Opleidingen />
           <br className="my-5" />
