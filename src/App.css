@@ -25,6 +25,7 @@ hr {
 
 small {
   color: var(--main-blue);
+  font-size: 0.6em;
 }
 
 .blue-text {
@@ -159,7 +160,6 @@ h2.title-bg > span {
 
 .arrow {
   text-align: center;
-  margin: 8% 0;
   color: grey;
 }
 

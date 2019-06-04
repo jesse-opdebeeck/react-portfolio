@@ -23,7 +23,7 @@ class Skills extends Component {
               <p className="lead">
                 Goed met websites en computers en zo van die dingen.
               </p>
-              <hr className="my-4" />
+              <hr className="mt-4" />
               <p>
                 Als u op deze pagina bent, bent u ofwel op zoek naar een
                 gemotiveerd persoon om uw team op een sterke wijze aan te
@@ -35,18 +35,14 @@ class Skills extends Component {
             </Fade>
           </div>
           <Fade delay={750}>
-            <h2 className="display-1 text-muted text-center my-5">
-              Ontdek waarom
-            </h2>
+            <h2 className="display-3 text-muted text-center">Ontdek waarom</h2>
           </Fade>
-          <Bounce delay={1000} top={true}>
+          <Bounce delay={1000} top>
             <div className="arrow bounce">
-              <p className="fa fa-arrow-down fa-2x my-5" href="#" />
+              <p className="fa fa-arrow-down fa-2x mb-5" href="#" />
             </div>
           </Bounce>
-          <br className="my-5" />
           <Troll />
-          <br className="my-5" />
           <Opleidingen />
           <br className="my-5" />
           <Ervaringen />

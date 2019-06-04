@@ -5,7 +5,7 @@ class Opleidingen extends Component {
   render() {
     return (
       <section className="skillsection">
-        <h2 className="my-5 display-3 text-center title-bg">
+        <h2 className="mb-5 display-3 text-center title-bg">
           <span>Opleiding</span>
         </h2>
         <div className="row">
