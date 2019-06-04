@@ -105,8 +105,9 @@ function ProjectList(props) {
   const projects = props.projects;
   const projectItems = projects.map(project => (
     <div className="col-md-3 col-sm-6 mb-4" key={project.key}>
+      {/* eslint-disable-next-line */}
       <a
-        href="javascript:void(0)"
+        href="#"
         onClick={event => {
           props.setProject(event, project.key);
         }}

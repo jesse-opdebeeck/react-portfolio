@@ -1,7 +1,13 @@
 import React, { Component } from "react";
 import Header from "../components/header";
-import { Fade, Zoom } from "react-reveal";
+import { Bounce, Fade } from "react-reveal";
 import "font-awesome/css/font-awesome.min.css";
+
+import Opleidingen from "./skills/opleidingen";
+import Ervaringen from "./skills/ervaringen";
+import Hobbys from "./skills/hobbys";
+import Technologie from "./skills/technologie";
+import Code from "./skills/code";
 
 class Skills extends Component {
   state = {};
@@ -9,7 +15,7 @@ class Skills extends Component {
     return (
       <React.Fragment>
         <Header title="Skills" />
-        <div className="container">
+        <div className="container-fluid">
           <div className="jumbotron my-5">
             <Fade>
               <h1 className="display-3">Jesse Op de Beeck</h1>
@@ -27,12 +33,26 @@ class Skills extends Component {
               </p>
             </Fade>
           </div>
-          <h2 className="display-1 text-muted text-center mt-5">
-            Ontdek waarom
-          </h2>
-          <div className="arrow bounce">
-            <a className="fa fa-arrow-down fa-2x" href="#" />
-          </div>
+          <Fade delay={750}>
+            <h2 className="display-1 text-muted text-center my-5">
+              Ontdek waarom
+            </h2>
+          </Fade>
+          <Bounce delay={1000} top={true}>
+            <div className="arrow bounce">
+              <p className="fa fa-arrow-down fa-2x my-5" href="#" />
+            </div>
+          </Bounce>
+          <br className="my-5" />
+          <Opleidingen />
+          <br className="my-5" />
+          <Ervaringen />
+          <br className="my-5" />
+          <Code />
+          <br className="my-5" />
+          <Technologie />
+          <br className="my-5" />
+          <Hobbys />
         </div>
       </React.Fragment>
     );

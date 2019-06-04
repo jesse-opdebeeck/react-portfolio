@@ -19,6 +19,18 @@ header {
   color: var(--main-white);
 }
 
+hr {
+  border-color: var(--main-blue);
+}
+
+small {
+  color: var(--main-blue);
+}
+
+.blue-text {
+  color: var(--main-blue);
+}
+
 .hero {
   position: relative;
   background-color: var(--main-black);
@@ -102,9 +114,53 @@ header {
   transition-timing-function: ease-out;
 }
 
+.skillsection {
+  height: 100vh;
+}
+
+.skillsection h2 {
+  text-transform: uppercase;
+}
+
+h2.title-bg {
+  position: relative;
+  z-index: 1;
+}
+
+h2.title-bg:before {
+  border-top: 3px solid var(--main-blue);
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+h2.title-bg > span {
+  background: var(--main-white);
+  padding: 0 15px;
+}
+
+.opleiding {
+  padding: 5px 40px;
+  border: 1px solid grey;
+}
+
+.opleiding-description {
+  height: 200px;
+}
+
+.opleiding-list {
+  height: 100px;
+}
+
 .arrow {
   text-align: center;
   margin: 8% 0;
+  color: grey;
 }
 
 .bounce {
