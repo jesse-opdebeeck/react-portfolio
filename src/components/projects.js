@@ -4,10 +4,10 @@ import Header from "./header";
 import KomikImg from "../img/project-komik.jpg";
 import BeegoImg from "../img/project-beego.jpg";
 import HqImg from "../img/project-hq.jpg";
-import SdworxImg from "../img/project-sdworx.png";
-import CvImg from "../img/project-cv.png";
+import SdworxImg from "../img/project-sdworx.jpg";
+import CvImg from "../img/project-cv.jpg";
 import PitchImg from "../img/project-pitch.jpg";
-import OlijfImg from "../img/project-olijf.png";
+import OlijfImg from "../img/project-olijf.jpg";
 
 const projects = [
   {
