@@ -105,7 +105,12 @@ function ProjectList(props) {
   const projects = props.projects;
   const projectItems = projects.map(project => (
     <div className="col-md-3 col-sm-6 mb-4" key={project.key}>
-      <a href="javascript:void(0)">
+      <a
+        href="javascript:void(0)"
+        onClick={event => {
+          props.setProject(event, project.key);
+        }}
+      >
         <img className="img-fluid" src={project.image} alt={project.title} />
       </a>
     </div>
@@ -119,7 +124,8 @@ class Projects extends Component {
     currentProjectIndex: 4
   };
 
-  setProject = index => {
+  setProject = (event, index) => {
+    event.preventDefault();
     this.setState({ currentProjectIndex: index });
   };
 
@@ -149,7 +155,7 @@ class Projects extends Component {
           </div>
 
           <h3 className="my-4">Alle projecten</h3>
-          <ProjectList projects={projects} />
+          <ProjectList projects={projects} setProject={this.setProject} />
         </div>
       </React.Fragment>
     );
