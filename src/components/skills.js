@@ -17,31 +17,35 @@ class Skills extends Component {
       <React.Fragment>
         <Header title="Skills" />
         <div className="container-fluid">
-          <div className="my-5 text-center col-6 mx-auto">
-            <Fade>
-              <h1 className="display-3">Jesse Op de Beeck</h1>
-              <p className="lead">
-                Goed met websites en computers en zo van die dingen.
-              </p>
-              <hr className="mt-4" />
-              <p>
-                Als u op deze pagina bent, bent u ofwel op zoek naar een
-                gemotiveerd persoon om uw team op een sterke wijze aan te
-                vullen, en zo bij te dragen tot een succesvolle workflow, of
-                bent u hier gewoon terechtgekomen door een kennis die zei: "Kijk
-                naar deze website, die gast schrijft echt de raarste dingen." In
-                beide gevallen bent u op de juiste plaats.
-              </p>
-            </Fade>
-          </div>
-          <Fade delay={750}>
-            <h2 className="display-3 text-muted text-center">Ontdek waarom</h2>
-          </Fade>
-          <Bounce delay={1000} top>
-            <div className="arrow bounce">
-              <p className="fa fa-arrow-down fa-2x mb-5" href="#" />
+          <section className="skillsection">
+            <div className="my-5 text-center col-6 mx-auto">
+              <Fade>
+                <h1 className="display-3">Jesse Op de Beeck</h1>
+                <p className="lead">
+                  Goed met websites en computers en zo van die dingen.
+                </p>
+                <hr className="mt-4" />
+                <p>
+                  Als u op deze pagina bent, bent u ofwel op zoek naar een
+                  gemotiveerd persoon om uw team op een sterke wijze aan te
+                  vullen, en zo bij te dragen tot een succesvolle workflow, of
+                  bent u hier gewoon terechtgekomen door een kennis die zei:
+                  "Kijk naar deze website, die gast schrijft echt de raarste
+                  dingen." In beide gevallen bent u op de juiste plaats.
+                </p>
+              </Fade>
             </div>
-          </Bounce>
+            <Fade delay={750}>
+              <h2 className="display-3 text-muted text-center">
+                Ontdek waarom
+              </h2>
+            </Fade>
+            <Bounce delay={1000} top>
+              <div className="arrow bounce">
+                <p className="fa fa-arrow-down fa-2x mb-5" href="#" />
+              </div>
+            </Bounce>
+          </section>
           <Troll />
           <Opleidingen />
           <br className="my-5" />

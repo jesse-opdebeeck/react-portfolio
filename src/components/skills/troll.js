@@ -13,7 +13,7 @@ class Ervaringen extends Component {
             <span className="display-4"> Loading awesomeness...</span>
           </div>
           <br className="my-5" />
-          <Fade delay={2000}>
+          <Fade delay={1000}>
             <div className="mt-5">
               <span className="display-4">
                 Just kidding. You can just scroll down, nothing's going to
