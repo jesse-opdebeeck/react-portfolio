@@ -10,14 +10,23 @@ class Opleidingen extends Component {
           <span>Opleiding</span>
         </h2>
         <div className="row">
-          <Fade delay={250}>
-            <div className="col-lg-4 mb-5 opleiding-wrapper">
+          <Fade delay={200}>
+            <div className="col-12 col-xl-4 col-lg-12 col-md-12 mb-5 opleiding-wrapper">
               <div className="card mb-5 mb-lg-0 opleiding-box">
                 <div className="card-body">
                   <h3 className="card-title text-muted text-uppercase text-center">
-                    <small>2006 - </small>
-                    Sint-Gummarus <small> - 2013</small>
+                    <small className="d-lg-inline d-xs-none d-sm-none d-md-none">
+                      2006 -{" "}
+                    </small>
+                    Sint-Gummarus{" "}
+                    <small className="d-lg-inline d-xs-none d-sm-none d-md-none">
+                      {" "}
+                      - 2013
+                    </small>
                   </h3>
+                  <span className="d-block d-lg-none d-xl-none text-center blue-text">
+                    2006 - 2013
+                  </span>
                   <p className="lead opleiding-naam text-center">
                     handel en bedrijfsbeheer
                   </p>
@@ -44,14 +53,23 @@ class Opleidingen extends Component {
               </div>
             </div>
           </Fade>
-          <Fade delay={1000}>
-            <div className="col-lg-4 opleiding-wrapper">
+          <Fade delay={400}>
+            <div className="col-12 col-xl-4 col-lg-12 col-md-12 mb-5 opleiding-wrapper">
               <div className="card mb-5 mb-lg-0 opleiding-box">
                 <div className="card-body">
                   <h3 className="card-title text-muted text-uppercase text-center">
-                    <small>2013 - </small>
-                    Karel de Grote <small> - 2018</small>
+                    <small className="d-lg-inline d-xs-none d-sm-none d-md-none">
+                      2013 -{" "}
+                    </small>
+                    Karel de Grote{" "}
+                    <small className="d-lg-inline d-xs-none d-sm-none d-md-none">
+                      {" "}
+                      - 2018
+                    </small>
                   </h3>
+                  <span className="d-block d-lg-none d-xl-none text-center blue-text">
+                    2013 - 2018
+                  </span>
                   <p className="lead opleiding-naam text-center">
                     multimedia en communicatietechnologie
                   </p>
@@ -82,14 +100,23 @@ class Opleidingen extends Component {
               </div>
             </div>
           </Fade>
-          <Fade delay={1750}>
-            <div className="col-lg-4 opleiding-wrapper">
+          <Fade delay={600}>
+            <div className="col-12 col-xl-4 col-lg-12 col-md-12 mb-5 opleiding-wrapper">
               <div className="card mb-5 mb-lg-0 opleiding-box">
                 <div className="card-body">
                   <h3 className="card-title text-muted text-uppercase text-center">
-                    <small>2018 - </small>
-                    Scheppers <small> - 2019</small>
+                    <small className="d-lg-inline d-xs-none d-sm-none d-md-none">
+                      2018 -{" "}
+                    </small>
+                    Scheppers{" "}
+                    <small className="d-lg-inline d-xs-none d-sm-none d-md-none">
+                      {" "}
+                      - 2019
+                    </small>
                   </h3>
+                  <span className="d-block d-lg-none d-xl-none text-center blue-text">
+                    2018 - 2019
+                  </span>
                   <p className="lead opleiding-naam text-center">
                     webontwikkeling en netwerkbeheer
                   </p>
