@@ -1,14 +1,25 @@
 import React, { Component } from "react";
+import ScrollTrigger from "react-scroll-trigger";
 
 class Code extends Component {
   state = {
-    htmlSkill: 100,
-    cssSkill: 100,
-    phpSkill: 95,
-    sqlSkill: 90,
-    jsSkill: 60,
-    csharpSkill: 30,
-    pythonSkill: 15
+    htmlSkill: 0,
+    cssSkill: 0,
+    phpSkill: 0,
+    sqlSkill: 0,
+    jsSkill: 0,
+    csharpSkill: 0,
+    pythonSkill: 0
+  };
+
+  updateSkills = () => {
+    this.setState({ htmlSkill: 100 });
+    this.setState({ cssSkill: 100 });
+    this.setState({ phpSkill: 95 });
+    this.setState({ sqlSkill: 90 });
+    this.setState({ jsSkill: 60 });
+    this.setState({ csharpSkill: 30 });
+    this.setState({ pythonSkill: 10 });
   };
 
   getSkillWidth = skill => {
@@ -56,97 +67,99 @@ class Code extends Component {
           <h2 className="my-5 display-3 text-center title-bg">
             <span>Code</span>
           </h2>
-          <div className="row">
-            <div className="col-2 text-right display-4">HTML</div>
-            <div className="col-9 progress">
-              <div
-                className="progress-bar"
-                role="progressbar"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style={this.getSkillWidth("html")}
-              />
+          <ScrollTrigger onEnter={this.updateSkills}>
+            <div className="row">
+              <div className="col-2 text-right display-4">HTML</div>
+              <div className="col-9 progress">
+                <div
+                  className="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style={this.getSkillWidth("html")}
+                />
+              </div>
             </div>
-          </div>
-          <div className="row">
-            <div className="col-2 text-right display-4">CSS</div>
-            <div className="col-9 progress">
-              <div
-                className="progress-bar"
-                role="progressbar"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style={this.getSkillWidth("css")}
-              />
+            <div className="row">
+              <div className="col-2 text-right display-4">CSS</div>
+              <div className="col-9 progress">
+                <div
+                  className="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style={this.getSkillWidth("css")}
+                />
+              </div>
             </div>
-          </div>
-          <div className="row">
-            <div className="col-2 text-right display-4">PHP</div>
-            <div className="col-9 progress">
-              <div
-                className="progress-bar"
-                role="progressbar"
-                aria-valuenow="95"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style={this.getSkillWidth("php")}
-              />
+            <div className="row">
+              <div className="col-2 text-right display-4">PHP</div>
+              <div className="col-9 progress">
+                <div
+                  className="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="95"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style={this.getSkillWidth("php")}
+                />
+              </div>
             </div>
-          </div>
-          <div className="row">
-            <div className="col-2 text-right display-4">SQL</div>
-            <div className="col-9 progress">
-              <div
-                className="progress-bar"
-                role="progressbar"
-                aria-valuenow="90"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style={this.getSkillWidth("sql")}
-              />
+            <div className="row">
+              <div className="col-2 text-right display-4">SQL</div>
+              <div className="col-9 progress">
+                <div
+                  className="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style={this.getSkillWidth("sql")}
+                />
+              </div>
             </div>
-          </div>
-          <div className="row">
-            <div className="col-2 text-right display-4">JS</div>
-            <div className="col-9 progress">
-              <div
-                className="progress-bar"
-                role="progressbar"
-                aria-valuenow="60"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style={this.getSkillWidth("js")}
-              />
+            <div className="row">
+              <div className="col-2 text-right display-4">JS</div>
+              <div className="col-9 progress">
+                <div
+                  className="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="60"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style={this.getSkillWidth("js")}
+                />
+              </div>
             </div>
-          </div>
-          <div className="row">
-            <div className="col-2 text-right display-4">C#</div>
-            <div className="col-9 progress">
-              <div
-                className="progress-bar"
-                role="progressbar"
-                aria-valuenow="30"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style={this.getSkillWidth("csharp")}
-              />
+            <div className="row">
+              <div className="col-2 text-right display-4">C#</div>
+              <div className="col-9 progress">
+                <div
+                  className="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="30"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style={this.getSkillWidth("csharp")}
+                />
+              </div>
             </div>
-          </div>
-          <div className="row">
-            <div className="col-2 text-right display-4">Python</div>
-            <div className="col-9 progress">
-              <div
-                className="progress-bar"
-                role="progressbar"
-                aria-valuenow="10"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style={this.getSkillWidth("python")}
-              />
+            <div className="row">
+              <div className="col-2 text-right display-4">Python</div>
+              <div className="col-9 progress">
+                <div
+                  className="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="10"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style={this.getSkillWidth("python")}
+                />
+              </div>
             </div>
-          </div>
+          </ScrollTrigger>
         </section>
       </React.Fragment>
     );
