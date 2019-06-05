@@ -1,5 +1,11 @@
 import React, { Component } from "react";
 
+import HQImg from "../../img/hq.png";
+import OlijfImg from "../../img/olijftak.jpg";
+import WorxImg from "../../img/worx.png";
+import BeegoImg from "../../img/beego.png";
+import PolletImg from "../../img/pollet.jpg";
+
 class Ervaringen extends Component {
   render() {
     return (
@@ -10,11 +16,7 @@ class Ervaringen extends Component {
           </h2>
           <div className="row my-5">
             <div className="col-3 offset-1">
-              <img
-                className="ervaring-foto"
-                src="https://via.placeholder.com/800x600"
-                alt="foto"
-              />
+              <img className="ervaring-foto" src={HQImg} alt="foto" />
             </div>
             <div className="col-6 offset-1">
               <h3>Stage @ HQ</h3>
@@ -48,20 +50,12 @@ class Ervaringen extends Component {
               </p>
             </div>
             <div className="col-3 offset-1">
-              <img
-                className="ervaring-foto"
-                src="https://via.placeholder.com/800x600"
-                alt="foto"
-              />
+              <img className="ervaring-foto" src={BeegoImg} alt="foto" />
             </div>
           </div>
           <div className="row my-5">
             <div className="col-3 offset-1">
-              <img
-                className="ervaring-foto"
-                src="https://via.placeholder.com/800x600"
-                alt="foto"
-              />
+              <img className="ervaring-foto" src={OlijfImg} alt="foto" />
             </div>
             <div className="col-6 offset-1">
               <h3>Infosessies @ De Olijftak</h3>
@@ -86,7 +80,7 @@ class Ervaringen extends Component {
           </div>
           <div className="row my-5 text-right">
             <div className="col-6 offset-1">
-              <h3>Studentenjob @ SD Worx</h3>
+              <h3>Studentenjobs @ SD Worx</h3>
               <p className="lead blue-text">September 2017, Augustus 2018</p>
               <p>
                 Tijdens de grote vakanties werkte ik als student tot nu toe twee
@@ -100,11 +94,25 @@ class Ervaringen extends Component {
               </p>
             </div>
             <div className="col-3 offset-1">
-              <img
-                className="ervaring-foto"
-                src="https://via.placeholder.com/800x600"
-                alt="foto"
-              />
+              <img className="ervaring-foto" src={WorxImg} alt="foto" />
+            </div>
+          </div>
+          <div className="row my-5">
+            <div className="col-3 offset-1">
+              <img className="ervaring-foto" src={PolletImg} alt="foto" />
+            </div>
+            <div className="col-6 offset-1">
+              <h3>Studentenjob @ Bakkerij Pollet</h3>
+              <p className="lead blue-text">2017 - 2018</p>
+              <p>
+                Misschien minder indrukwekkend in een ICT-setting, maar toch
+                iets dat me veranderd heeft als persoon. Als mijn eerste
+                serieuze studentenjob ooit op regelmatige basis heb ik gedurende
+                anderhalf jaar gewerkt bij een bakkerij in Ranst die vooral
+                brood produceerde voor automaten in de streek. Het waren lange
+                nachten en vroege ochtenden maar ik heb er veel bijgeleerd en
+                mijn baas heeft me een goede werkethiek aangeleerd.
+              </p>
             </div>
           </div>
         </section>

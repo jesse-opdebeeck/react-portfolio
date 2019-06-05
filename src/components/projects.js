@@ -1,13 +1,10 @@
 import React, { Component } from "react";
 import Header from "./header";
 
-import KomikImg from "../img/project-komik.jpg";
-import BeegoImg from "../img/project-beego.jpg";
-import HqImg from "../img/project-hq.jpg";
-import SdworxImg from "../img/project-sdworx.jpg";
-import CvImg from "../img/project-cv.jpg";
-import PitchImg from "../img/project-pitch.jpg";
-import OlijfImg from "../img/project-olijf.jpg";
+import KomikImg from "../img/komik.jpg";
+import HqImg from "../img/hq.png";
+import CvImg from "../img/cv.jpg";
+import PitchImg from "../img/videopitch.jpg";
 
 const projects = [
   {
@@ -27,18 +24,6 @@ const projects = [
   },
   {
     key: 1,
-    title: "Studentenjob @ Beego",
-    description:
-      "Gedurende een maand heb ik bij Beego gewerkt, waar men studenten naar mensen thuis stuurt om hen te helpen met hun computerproblemen. Hier heb ik veel bijgeleerd rond zowel hardware als software.",
-    details: [
-      "December 2018",
-      "Antwerpen en omstreken",
-      "Ongeveer 20 mensen geholpen"
-    ].map((detail, i) => <li key={i}>{detail}</li>),
-    image: BeegoImg // https://i.imgur.com/gOYvWIv.png
-  },
-  {
-    key: 2,
     title: "Stage @ HQ",
     description:
       "Bij de start-up HQ heb ik een maand lang stage gelopen en mogen meewerken aan hun website binnen de bedrijfscultuur. Een enorm leerrijke ervaring waarin ik React heb geleerd en heb kunnen genieten van hoe het eraan toe gaat in de werkwereld.",
@@ -52,19 +37,7 @@ const projects = [
     image: HqImg // https://i.imgur.com/fdmzr9V.png
   },
   {
-    key: 3,
-    title: "Studentenjob @ SDWorx",
-    description:
-      "Tweemaal werkte ik als student bij SDWorx op de Brouwersvliet in Antwerpen. Het eerste jaar was dit als medewerker op de Facility afdeling, en het tweede jaar bij Corporate HR voor administratieve taken.",
-    details: [
-      "Zomer 2017 en 2018",
-      "Facility klusjes",
-      "Administratie Corporate HR"
-    ].map((detail, i) => <li key={i}>{detail}</li>),
-    image: SdworxImg // https://i.imgur.com/ZLqgcqJ.png
-  },
-  {
-    key: 4,
+    key: 2,
     title: "Infographic CV",
     description:
       "Een CV is natuurlijk veel interessanter in de vorm van een leuke infographic, en als thema ervoor koos ik de beroemdste fantasy-trilogie in de wereld.",
@@ -74,7 +47,7 @@ const projects = [
     image: CvImg // https://i.imgur.com/moqdt77.png
   },
   {
-    key: 5,
+    key: 3,
     title: "Videopitch",
     description:
       "Welke betere manier om mezelf voor te stellen dan een korte video over mezelf? Het is gemaakt in het formaat van een interview en ik leg er mijn beste capaciteiten in uit.",
@@ -85,19 +58,6 @@ const projects = [
       "Geweldige muziek"
     ].map((detail, i) => <li key={i}>{detail}</li>),
     image: PitchImg // https://i.imgur.com/4MHSYsr.jpg
-  },
-  {
-    key: 6,
-    title: "Helpsessies Dienstencentrum Olijftak",
-    description:
-      "Tijdens mijn Se-n-Se jaar in Antwerpen hielden we drie verschillende helpdesk-sessies in het dienstencentrum de Olijftak in Borgerhout. Hier hielpen we de senioren met hun vragen over technologie.",
-    details: [
-      "Drie sessies",
-      "Helpdesk",
-      "Presentatie over passwords",
-      "Accounts opzetten"
-    ].map((detail, i) => <li key={i}>{detail}</li>),
-    image: OlijfImg // https://i.imgur.com/dZYC3AX.png
   }
 ];
 
@@ -122,7 +82,7 @@ function ProjectList(props) {
 
 class Projects extends Component {
   state = {
-    currentProjectIndex: 4
+    currentProjectIndex: 0
   };
 
   setProject = (event, index) => {
