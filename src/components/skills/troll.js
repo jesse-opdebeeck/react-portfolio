@@ -10,14 +10,17 @@ class Ervaringen extends Component {
             <div className="spinner-border text-primary" role="status">
               <span className="sr-only">Loading...</span>
             </div>
-            <span className="display-4"> Loading awesomeness...</span>
+            <span className="display-4">
+              {" "}
+              Alle geweldigheid wordt geladen...
+            </span>
           </div>
           <br className="my-5" />
-          <Fade delay={1000}>
+          <Fade delay={1500}>
             <div className="mt-5">
               <span className="display-4">
-                Just kidding. You can just scroll down, nothing's going to
-                appear here.
+                Mopje. Je kan gewoon naar beneden scrollen, er gaat hier niets
+                verschijnen.
               </span>
             </div>
           </Fade>
