@@ -232,6 +232,17 @@ h2.title-bg > span {
   transition-timing-function: ease-in;
 }
 
+.rek-part {
+  filter: brightness(50%);
+}
+
+.rek-part:hover {
+  filter: brightness(125%);
+  transition-property: filter;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
 .copyright-footer {
   position: relative;
   width: 100%;
