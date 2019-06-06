@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "../components/header";
+import Footer from "../components/footer";
 import { Bounce, Fade } from "react-reveal";
 import "font-awesome/css/font-awesome.min.css";
 
@@ -54,6 +55,7 @@ class Skills extends Component {
           <br className="my-5" />
           <Technologie />
         </div>
+        <Footer />
       </React.Fragment>
     );
   }

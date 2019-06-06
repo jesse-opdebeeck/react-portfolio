@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "../components/header";
+import Footer from "../components/footer";
 import { SocialIcon } from "react-social-icons";
 import callmeup from "../img/callmeup.jpg";
 
@@ -103,6 +104,7 @@ class Contact extends Component {
             </div>
           </div>
         </div>
+        <Footer />
       </React.Fragment>
     );
   }

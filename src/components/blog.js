@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "../components/header";
+import Footer from "../components/footer";
 
 class Blog extends Component {
   state = {};
@@ -118,6 +119,7 @@ class Blog extends Component {
             </div>
           </div>
         </div>
+        <Footer />
       </React.Fragment>
     );
   }

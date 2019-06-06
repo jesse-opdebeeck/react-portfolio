@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "./header";
+import Footer from "../components/footer";
 
 import KomikImg from "../img/komik.jpg";
 import HqImg from "../img/hq.png";
@@ -118,6 +119,7 @@ class Projects extends Component {
           <h3 className="my-4">Alle projecten</h3>
           <ProjectList projects={projects} setProject={this.setProject} />
         </div>
+        <Footer />
       </React.Fragment>
     );
   }

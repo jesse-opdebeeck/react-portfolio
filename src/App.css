@@ -251,9 +251,9 @@ h2.title-bg > span {
 .copyright-footer {
   position: relative;
   width: 100%;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   bottom: 0;
-  background-color: var(--main-black);
+  background-color: var(--main-gray);
   color: var(--main-white);
 }
