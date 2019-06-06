@@ -26,31 +26,52 @@ class Code extends Component {
     var width;
     switch (skill) {
       case "html":
-        width = { width: this.state.htmlSkill + "%" };
+        width = {
+          backgroundColor: "#e34f26",
+          width: this.state.htmlSkill + "%"
+        };
         break;
 
       case "css":
-        width = { width: this.state.cssSkill + "%" };
+        width = {
+          backgroundColor: "#016FBA",
+          width: this.state.cssSkill + "%"
+        };
         break;
 
       case "php":
-        width = { width: this.state.phpSkill + "%" };
+        width = {
+          backgroundColor: "#767BB3",
+          width: this.state.phpSkill + "%"
+        };
         break;
 
       case "sql":
-        width = { width: this.state.sqlSkill + "%" };
+        width = {
+          backgroundColor: "#E29105",
+          width: this.state.sqlSkill + "%"
+        };
         break;
 
       case "js":
-        width = { width: this.state.jsSkill + "%" };
+        width = {
+          backgroundColor: "#E9CA32",
+          width: this.state.jsSkill + "%"
+        };
         break;
 
       case "csharp":
-        width = { width: this.state.csharpSkill + "%" };
+        width = {
+          backgroundColor: "#6B1578",
+          width: this.state.csharpSkill + "%"
+        };
         break;
 
       case "python":
-        width = { width: this.state.pythonSkill + "%" };
+        width = {
+          backgroundColor: "#386EA0",
+          width: this.state.pythonSkill + "%"
+        };
         break;
 
       default:
@@ -67,6 +88,13 @@ class Code extends Component {
           <h2 className="my-5 display-3 text-center title-bg">
             <span>Code</span>
           </h2>
+          <p className="lead col-10 offset-1 mb-5">
+            In België wordt verwacht dat elke sollicitant tijdens het
+            aanvankelijke gesprek zichzelf kan uitdrukken in het Nederlands en
+            in het Frans, waar bij ICT-jobs meestal nog Engels bij komt ook. Ik
+            besloot dat deze drie talen niet genoeg waren, en dus kan ik mij nu
+            ook perfect uitdrukken in volgende codetalen. Checkmate.
+          </p>
           <ScrollTrigger onEnter={this.updateSkills}>
             <div className="row">
               <div className="col-2 text-right display-4">HTML</div>
