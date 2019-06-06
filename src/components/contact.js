@@ -33,7 +33,7 @@ class Contact extends Component {
           </div>
           <div class="row">
             <div class="col-md-6 mb-5">
-              <div class="card h-100 contact-card">
+              <div class="card h-100 contact-card text-center">
                 <div class="card-body">
                   <h2 class="card-title">Direct bericht</h2>
                   <p class="card-text">Geef hier een snel berichtje in!</p>
@@ -66,8 +66,8 @@ class Contact extends Component {
             </div>
             <div class="col-md-6 mb-5">
               <div class="card contact-card">
-                <div class="card-body">
-                  <h2 class="card-title">Social media</h2>
+                <div class="card-body text-center">
+                  <h2 class="card-title mb-3">Social media</h2>
                   <SocialIcon
                     url="http://www.facebook.com/jesseodb"
                     target="_blank"
