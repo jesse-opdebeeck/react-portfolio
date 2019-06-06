@@ -173,14 +173,6 @@ h2.title-bg > span {
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-.opleiding-description {
-  height: 200px;
-}
-
-.opleiding-list {
-  height: 50px;
-}
-
 .opleiding-icon {
   font-size: 2.5rem;
   color: var(--main-blue);
@@ -233,6 +225,11 @@ h2.title-bg > span {
 .progress {
   height: 3.4em;
   padding: 0;
+}
+
+.progress-bar {
+  transition-duration: 1.5s;
+  transition-timing-function: ease-in;
 }
 
 .contact-dm-form textarea {

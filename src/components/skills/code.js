@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ScrollTrigger from "react-scroll-trigger";
+import Fade from "react-reveal/Fade";
 
 class Code extends Component {
   state = {
@@ -88,13 +89,16 @@ class Code extends Component {
           <h2 className="my-5 display-3 text-center title-bg">
             <span>Code</span>
           </h2>
-          <p className="lead col-10 offset-1 mb-5">
-            In België wordt verwacht dat elke sollicitant tijdens het
-            aanvankelijke gesprek zichzelf kan uitdrukken in het Nederlands en
-            in het Frans, waar bij ICT-jobs meestal nog Engels bij komt ook. Ik
-            besloot dat deze drie talen niet genoeg waren, en dus kan ik mij nu
-            ook perfect uitdrukken in volgende codetalen. Checkmate.
-          </p>
+          <Fade>
+            <p className="lead col-10 offset-1 mb-5">
+              In België wordt verwacht dat elke sollicitant tijdens het
+              aanvankelijke gesprek zichzelf kan uitdrukken in het Nederlands en
+              in het Frans, waar bij ICT-jobs meestal nog Engels bij komt ook.
+              Ik besloot dat deze drie talen niet genoeg waren, en dus kan ik
+              mij nu ook perfect uitdrukken in volgende codetalen. Ken jij
+              misschien iemand anders die tientalig is? Checkmate.
+            </p>
+          </Fade>
           <ScrollTrigger onEnter={this.updateSkills}>
             <div className="row">
               <div className="col-2 text-right display-4">HTML</div>

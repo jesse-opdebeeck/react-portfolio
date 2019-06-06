@@ -16,6 +16,15 @@ class Ervaringen extends Component {
             <span>Ervaringen</span>
           </h2>
           <Fade>
+            <p className="lead mb-5 col-10 offset-1">
+              Een wijze man zei ooit dat een mens gemaakt wordt door zijn
+              ervaringen. Zijn gedrag, attitude en alles waar die persoon voor
+              staat en in gelooft hangt af van de dingen die hij heeft
+              meegemaakt. Op het moment dat die wijze man die uitspraak bedacht,
+              schreef hij een intro-tekstje op zijn online portfolio.
+            </p>
+          </Fade>
+          <Fade>
             <div className="row my-5">
               <div className="col-3 offset-1">
                 <img className="ervaring-foto" src={HQImg} alt="foto" />

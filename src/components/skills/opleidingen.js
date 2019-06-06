@@ -9,6 +9,14 @@ class Opleidingen extends Component {
         <h2 className="mb-5 display-3 text-center title-bg">
           <span>Opleiding</span>
         </h2>
+        <p className="lead col-10 offset-1 mb-5">
+          Doorheen mijn leven heb ik vele veranderingen meegemaakt. De kleine,
+          onzekere jongen die school maar rot vond veranderde in een grote, iets
+          te zelfzekere man die school maar rot vond. De schoolperiode is nooit
+          gemakkelijk, maar erop terugkijkend zie ik dat die vele jaren me ook
+          veel hebben bijgeleerd. Zoals statistiek en hoe je een alarm moet
+          hacken. Heel nuttige dingen.
+        </p>
         <div className="row">
           <Fade delay={200}>
             <div className="col-12 col-xl-4 col-lg-12 col-md-12 mb-5 opleiding-wrapper">
