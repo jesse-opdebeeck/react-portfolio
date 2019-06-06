@@ -10,7 +10,6 @@ import Skills from "./components/skills";
 import Projects from "./components/projects";
 import Contact from "./components/contact";
 import Blog from "./components/blog";
-import NotFound from "./components/404";
 
 function App() {
   return (
@@ -21,7 +20,6 @@ function App() {
         <Route path="/skills" component={Skills} />
         <Route path="/projecten" component={Projects} />
         <Route path="/contact" component={Contact} />
-        <Route component={NotFound} />
       </Switch>
     </BrowserRouter>
   );

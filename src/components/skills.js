@@ -5,7 +5,6 @@ import "font-awesome/css/font-awesome.min.css";
 
 import Opleidingen from "./skills/opleidingen";
 import Ervaringen from "./skills/ervaringen";
-import Hobbys from "./skills/hobbys";
 import Technologie from "./skills/technologie";
 import Code from "./skills/code";
 import Troll from "./skills/troll";
@@ -54,8 +53,6 @@ class Skills extends Component {
           <Code />
           <br className="my-5" />
           <Technologie />
-          <br className="my-5" />
-          <Hobbys />
         </div>
       </React.Fragment>
     );
