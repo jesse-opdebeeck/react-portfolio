@@ -22,11 +22,6 @@ class Header extends Component {
         <div className="collapse navbar-collapse" id="navbarText">
           <ul className="navbar-nav headernav mr-auto">
             <li className="nav-item headernavitem">
-              <Link to="/" className="nav-link">
-                Home
-              </Link>
-            </li>
-            <li className="nav-item headernavitem">
               <Link
                 to="/skills"
                 className={

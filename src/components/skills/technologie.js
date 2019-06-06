@@ -4,7 +4,6 @@ import ReactWordcloud from "react-wordcloud";
 const words = [
   { text: "Bootstrap", value: 95 },
   { text: "Photoshop", value: 90 },
-
   { text: "Laravel", value: 90 },
   { text: "Premiere", value: 85 },
   { text: "Windows", value: 85 },
@@ -27,16 +26,6 @@ const words = [
 ];
 
 class Technologie extends Component {
-  /*componentDidMount() {
-    const script = document.createElement("script");
-
-    script.src = "http://cdn.wordart.com/wordart.min.js";
-    script.async = true;
-    script.defer = true;
-
-    document.body.appendChild(script);
-  }*/
-
   render() {
     return (
       <React.Fragment>
@@ -69,17 +58,11 @@ class Technologie extends Component {
                   "#17a2b8" //cyan
                 ],
                 fontFamily: "Roboto Slab",
-                fontSizes: [5, 60],
+                fontSizes: [20, 100],
                 rotations: 0
               }}
             />
           </div>
-          {/*<div
-            style={{ width: "500px", height: "500px" }}
-            className="col-8 offset-2"
-            data-wordart-src="//cdn.wordart.com/json/6llfkcbcq719"
-            data-wordart-show-attribution
-          /> */}
         </section>
       </React.Fragment>
     );
