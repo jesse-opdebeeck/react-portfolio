@@ -23,6 +23,18 @@ class Header extends Component {
           <ul className="navbar-nav headernav mr-auto">
             <li className="nav-item headernavitem">
               <Link
+                to="/over"
+                className={
+                  this.props.title === "Over Jesse"
+                    ? "nav-link active"
+                    : "nav-link"
+                }
+              >
+                Over mij
+              </Link>
+            </li>
+            <li className="nav-item headernavitem">
+              <Link
                 to="/skills"
                 className={
                   this.props.title === "Skills" ? "nav-link active" : "nav-link"
@@ -43,16 +55,7 @@ class Header extends Component {
                 Projecten
               </Link>
             </li>
-            <li className="nav-item headernavitem">
-              <Link
-                to="/blog"
-                className={
-                  this.props.title === "Blog" ? "nav-link active" : "nav-link"
-                }
-              >
-                Blog
-              </Link>
-            </li>
+
             <li className="nav-item headernavitem">
               <Link
                 to="/contact"

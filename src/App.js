@@ -9,14 +9,14 @@ import Home from "./components/home";
 import Skills from "./components/skills";
 import Projects from "./components/projects";
 import Contact from "./components/contact";
-import Blog from "./components/blog";
+import Over from "./components/over";
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
         <Route path="/" component={Home} exact />
-        <Route path="/blog" component={Blog} />
+        <Route path="/over" component={Over} />
         <Route path="/skills" component={Skills} />
         <Route path="/projecten" component={Projects} />
         <Route path="/contact" component={Contact} />
