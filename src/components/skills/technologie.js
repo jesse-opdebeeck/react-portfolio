@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import ReactWordcloud from "react-wordcloud";
+import ScrollTrigger from "react-scroll-trigger";
+import Fade from "react-reveal/Fade";
 
-const words = [
+const wordsArray = [
   { text: "Bootstrap", value: 95 },
   { text: "Photoshop", value: 90 },
   { text: "Laravel", value: 90 },
@@ -26,6 +28,14 @@ const words = [
 ];
 
 class Technologie extends Component {
+  state = {
+    words: []
+  };
+
+  updateWords = () => {
+    this.setState({ words: wordsArray });
+  };
+
   render() {
     return (
       <React.Fragment>
@@ -33,35 +43,39 @@ class Technologie extends Component {
           <h2 className="my-5 display-3 text-center title-bg">
             <span>Technologie</span>
           </h2>
-          <p className="lead col-10 offset-1 mb-5">
-            Vooral in de ICT-sector is het dezer dagen belangrijk dat je weet
-            hoe je moet omgaan met technologie. Hiermee bedoel ik zowel zowel
-            harde als softe ware. En terwijl ik niet contractueel kan garanderen
-            dat ik niets van uw apparaten compleet ga ruïneren, kan ik wel met
-            alle trots zeggen dat ik er hier en daar wel iets van volgende
-            dingen zal kennen.
-          </p>
+          <Fade>
+            <p className="lead col-10 offset-1 mb-5">
+              Vooral in de ICT-sector is het dezer dagen belangrijk dat je weet
+              hoe je moet omgaan met technologie. Hiermee bedoel ik zowel zowel
+              harde als softe ware. En terwijl ik niet contractueel kan
+              garanderen dat ik niets van uw apparaten compleet ga ruïneren, kan
+              ik wel met alle trots zeggen dat ik er hier en daar wel iets van
+              volgende dingen zal kennen.
+            </p>
+          </Fade>
           <div className="col-10 offset-1">
-            <ReactWordcloud
-              words={words}
-              options={{
-                colors: [
-                  "#007bff", //blue
-                  "#6610f2", //indigo
-                  "#6f42c1", //purple
-                  "#e83e8c", //pink
-                  "#dc3545", //red
-                  "#fd7e14", //orange
-                  "#ffc107", //yellow
-                  "#28a745", //green
-                  "#20c997", //teal
-                  "#17a2b8" //cyan
-                ],
-                fontFamily: "Roboto Slab",
-                fontSizes: [20, 100],
-                rotations: 0
-              }}
-            />
+            <ScrollTrigger onEnter={this.updateWords}>
+              <ReactWordcloud
+                words={this.state.words}
+                options={{
+                  colors: [
+                    "#007bff", //blue
+                    "#6610f2", //indigo
+                    "#6f42c1", //purple
+                    "#e83e8c", //pink
+                    "#dc3545", //red
+                    "#fd7e14", //orange
+                    "#ffc107", //yellow
+                    "#28a745", //green
+                    "#20c997", //teal
+                    "#17a2b8" //cyan
+                  ],
+                  fontFamily: "Roboto Slab",
+                  fontSizes: [20, 100],
+                  rotations: 0
+                }}
+              />
+            </ScrollTrigger>
           </div>
         </section>
       </React.Fragment>
