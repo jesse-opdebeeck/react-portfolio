@@ -11,9 +11,9 @@ import Books from "../img/books.png";
 import Bier from "../img/bier.png";
 
 const texts = [
-  "Dit zijn de HIMYM boeken",
-  "Dit is de Urbanus CD en Dishonored en Django",
-  "Dit is het Skyrim boek en Zelda CD",
+  "'The Playbook' en 'The Bro Code' zijn twee boeken uit de serie How I Met Your Mother, een sitcom die me aangenaam verrast heeft. Het bekertje is gevuld met uitgetrokken nietjes uit papieren van een vakantiewerk dat ik ooit deed en bijhoud als een herinnering, want het zijn echt wel ridicuul veel nietjes.",
+  "Hier vinden we een CD van Urbanus, mijn favoriete Belgische comedian sinds mijn kindertijd. Ik heb zijn optredens gegeven tijdens lessen in de lagere school, tijdens trouwfeesten en me als zijn stripfiguur verkleed met carnaval. Daar naast staat één van mijn favoriete games, Dishonored. Helemaal rechts zie je op de voorgrond een zakje blauw snoep dat gemaakt is om te lijken op 'Blue Sky', de drugs die gemaakt worden in wat makkelijk mijn favoriete drama-serie is: Breaking Bad. Op de achtergrond staat een comic book-versie van Django Unchained, een van mijn favoriete films van mijn absoluut favoriete regisseur.",
+  "Het grote zwarte boek op de achtergrond is niets luguber, beloofd. Het is een boek vol artwork van nog één van mijn favoriete games, Skyrim. Daarvoor zien we een cd met de soundtrack van één de eerste Wii-game die ik ooit kreeg van Sinterklaas, naar schatting in 2008. Nog daarvoor staat mijn blauwe Nintendo DSi, een apparaatje dat al jaren geen gebruik meer heeft gezien maar me toch door vele lange autoreizen heeft gedragen.",
   "Dit is de Oscar",
   "Dit zijn de boeken",
   "Hier staan de bierflesjes"
@@ -56,19 +56,19 @@ class Over extends Component {
               src={Himym}
               className="col-4 mx-0 px-0 h-100 rek-part"
               alt="stuk foto van rek"
-              onClick={this.changeText(0)}
+              onClick={() => this.changeText(0)}
             />
             <img
               src={Urb}
               className="col-4 mx-0 px-0 h-100 rek-part light"
               alt="stuk foto van rek"
-              onClick={this.changeText}
+              onClick={() => this.changeText(1)}
             />
             <img
               src={Sky}
               className="col-4 mx-0 px-0 h-100 rek-part"
               alt="stuk foto van rek"
-              onClick={this.changeText}
+              onClick={() => this.changeText(2)}
             />
           </div>
           <div className="row">
@@ -76,19 +76,19 @@ class Over extends Component {
               src={Oscar}
               className="col-3 mx-0 px-0 h-100 rek-part"
               alt="stuk foto van rek"
-              onClick={this.changeText}
+              onClick={() => this.changeText(3)}
             />
             <img
               src={Books}
               className="col-6 mx-0 px-0 h-100 rek-part"
               alt="stuk foto van rek"
-              onClick={this.changeText}
+              onClick={() => this.changeText(4)}
             />
             <img
               src={Bier}
               className="col-3 mx-0 px-0 h-100 rek-part"
               alt="stuk foto van rek"
-              onClick={this.changeText}
+              onClick={() => this.changeText(5)}
             />
           </div>
         </div>
