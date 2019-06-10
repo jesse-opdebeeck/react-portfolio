@@ -21,7 +21,8 @@ const projects = [
       "Eigen CMS",
       "Reservatiesysteem"
     ].map((detail, i) => <li key={i}>{detail}</li>),
-    image: KomikImg // https://i.imgur.com/9KwQhgm.jpg
+    image: KomikImg, // https://i.imgur.com/9KwQhgm.jpg
+    path: "http://komiktoneel.be"
   },
   {
     key: 1,
@@ -35,7 +36,8 @@ const projects = [
       "React",
       "Javascript"
     ].map((detail, i) => <li key={i}>{detail}</li>),
-    image: HqImg // https://i.imgur.com/fdmzr9V.png
+    image: HqImg, // https://i.imgur.com/fdmzr9V.png
+    path: "http://hq.app/"
   },
   {
     key: 2,
@@ -45,7 +47,8 @@ const projects = [
     details: ["Photoshop & Illustrator", "Volledig in thema"].map(
       (detail, i) => <li key={i}>{detail}</li>
     ),
-    image: CvImg // https://i.imgur.com/moqdt77.png
+    image: CvImg, // https://i.imgur.com/moqdt77.png
+    path: "https://i.imgur.com/ZmGRAMY.jpg"
   },
   {
     key: 3,
@@ -58,7 +61,8 @@ const projects = [
       "Eigen editing",
       "Geweldige muziek"
     ].map((detail, i) => <li key={i}>{detail}</li>),
-    image: PitchImg // https://i.imgur.com/4MHSYsr.jpg
+    image: PitchImg, // https://i.imgur.com/4MHSYsr.jpg
+    path: "https://www.youtube.com/watch?v=wTZYHYRZAUk"
   }
 ];
 
@@ -113,6 +117,14 @@ class Projects extends Component {
               <p>{projects[this.state.currentProjectIndex]["description"]}</p>
               <h3 className="my-3">Projectdetails</h3>
               <ul>{projects[this.state.currentProjectIndex]["details"]}</ul>
+              <a
+                href={projects[this.state.currentProjectIndex]["path"]}
+                className="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Bekijk
+              </a>
             </div>
           </div>
 

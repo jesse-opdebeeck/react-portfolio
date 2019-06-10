@@ -69,7 +69,7 @@ class Header extends Component {
               </Link>
             </li>
           </ul>
-          <span className="navbar-text">Placeholder</span>
+          <span className="navbar-text">PLACEHOLDER</span>
         </div>
       </header>
     );
