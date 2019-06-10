@@ -6,25 +6,25 @@ import Fade from "react-reveal/Fade";
 const wordsArray = [
   { text: "Bootstrap", value: 95 },
   { text: "Photoshop", value: 90 },
-  { text: "Laravel", value: 90 },
-  { text: "Premiere", value: 85 },
-  { text: "Windows", value: 85 },
-  { text: "Powerpoint", value: 85 },
+  { text: "Laravel", value: 85 },
+  { text: "Premiere", value: 80 },
+  { text: "Windows", value: 80 },
+  { text: "Powerpoint", value: 80 },
   { text: "Word", value: 80 },
   { text: "Hardware", value: 80 },
   { text: "VS Code", value: 80 },
   { text: "Git", value: 75 },
   { text: "E-mail", value: 70 },
-  { text: "VMWare", value: 70 },
-  { text: "Netwerkbeheer", value: 65 },
-  { text: "Audition", value: 65 },
+  { text: "VMWare", value: 65 },
+  { text: "Netwerkbeheer", value: 60 },
+  { text: "Audition", value: 60 },
   { text: "Excel", value: 60 },
   { text: "React", value: 60 },
   { text: "Linux", value: 55 },
-  { text: "Drupal", value: 55 },
-  { text: "Active Directory", value: 50 },
-  { text: "Visual Studio", value: 50 },
-  { text: "Grav", value: 45 }
+  { text: "Drupal", value: 50 },
+  { text: "Active Directory", value: 45 },
+  { text: "Visual Studio", value: 45 },
+  { text: "Grav", value: 40 }
 ];
 
 class Technologie extends Component {
@@ -71,7 +71,7 @@ class Technologie extends Component {
                     "#17a2b8" //cyan
                   ],
                   fontFamily: "Roboto Slab",
-                  fontSizes: [20, 100],
+                  fontSizes: [20, 150],
                   rotations: 0
                 }}
               />

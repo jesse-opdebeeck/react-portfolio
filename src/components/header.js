@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
+import CV from "../files/cv.pdf";
+
 class Header extends Component {
   render() {
     return (
@@ -69,7 +71,16 @@ class Header extends Component {
               </Link>
             </li>
           </ul>
-          <span className="navbar-text">PLACEHOLDER</span>
+          <span className="navbar-text">
+            <a
+              href={CV}
+              className="downloadCV"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Mijn CV
+            </a>
+          </span>
         </div>
       </header>
     );
