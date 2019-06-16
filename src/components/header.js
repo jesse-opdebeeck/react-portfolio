@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-import CV from "../files/cv.pdf";
+import CV from "../img/cv.png";
 
 class Header extends Component {
   render() {

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import { Helmet } from "react-helmet";
 
 import Himym from "../img/himym.png";
 import Urb from "../img/urb.png";
@@ -34,6 +35,9 @@ class Over extends Component {
   render() {
     return (
       <React.Fragment>
+        <Helmet>
+          <title>Over Jesse</title>
+        </Helmet>
         <Header title="Over Jesse" />
         <div className="container">
           <h1 className="mt-5">Maak kennis met me</h1>

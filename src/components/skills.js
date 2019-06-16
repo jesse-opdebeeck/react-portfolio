@@ -3,6 +3,7 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import { Bounce, Fade } from "react-reveal";
 import "font-awesome/css/font-awesome.min.css";
+import { Helmet } from "react-helmet";
 
 import Opleidingen from "./skills/opleidingen";
 import Ervaringen from "./skills/ervaringen";
@@ -15,6 +16,9 @@ class Skills extends Component {
   render() {
     return (
       <React.Fragment>
+        <Helmet>
+          <title>Jesse's Skills</title>
+        </Helmet>
         <Header title="Skills" />
         <div className="container-fluid">
           <section className="skillsection">

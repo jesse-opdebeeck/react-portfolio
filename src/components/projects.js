@@ -1,11 +1,14 @@
 import React, { Component } from "react";
 import Header from "./header";
 import Footer from "../components/footer";
+import { Helmet } from "react-helmet";
 
 import KomikImg from "../img/komik.jpg";
 import HqImg from "../img/hq.png";
 import CvImg from "../img/cv.jpg";
+import Cv2Img from "../img/cv.png";
 import PitchImg from "../img/videopitch.jpg";
+import StanImg from "../img/stan.png";
 
 const projects = [
   {
@@ -63,6 +66,33 @@ const projects = [
     ].map((detail, i) => <li key={i}>{detail}</li>),
     image: PitchImg, // https://i.imgur.com/4MHSYsr.jpg
     path: "https://www.youtube.com/watch?v=wTZYHYRZAUk"
+  },
+  {
+    key: 4,
+    title: "Student Antwerpen",
+    description:
+      "Een website om de jonge student door Antwerpen te leiden. Dit was tijdens mijn KdG-jaren een opdracht van Stad Antwerpen en heb ik samen met een teamgenoot gebouwd. Hier kwam ook een app bij kijken.",
+    details: [
+      "Eerste confrontatie met Laravel",
+      "Admin Dashboard",
+      "Database met migrations"
+    ].map((detail, i) => <li key={i}>{detail}</li>),
+    image: StanImg,
+    path: "https://github.com/Vincentdc94/Project_Antwerpen/"
+  },
+  {
+    key: 5,
+    title: "Infographic CV 2.0",
+    description:
+      "Omdat de andere cv misschien iets te... extravagant is, besloot ik om nog een tweede infographic cv te maken die iets meer overeenkomt met de professionele standaard. Daarnaast blijf ik trots op de andere creatie en blijf ik hem ook op deze website houden.",
+    details: [
+      "Photoshop",
+      "Infographic formaat",
+      "Blauw kleurenschema",
+      "Juni 2019"
+    ].map((detail, i) => <li key={i}>{detail}</li>),
+    image: Cv2Img,
+    path: Cv2Img
   }
 ];
 
@@ -98,6 +128,9 @@ class Projects extends Component {
   render() {
     return (
       <React.Fragment>
+        <Helmet>
+          <title>Jesse's Projecten</title>
+        </Helmet>
         <Header title="Projecten" />
         <div className="container">
           <h1 className="my-4">

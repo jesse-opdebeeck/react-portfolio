@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import { Helmet } from "react-helmet";
 
 import { SocialIcon } from "react-social-icons";
 import callmeup from "../img/callmeup.jpg";
@@ -10,6 +11,9 @@ class Contact extends Component {
   render() {
     return (
       <React.Fragment>
+        <Helmet>
+          <title>Contacteer Jesse</title>
+        </Helmet>
         <Header title="Contact" />
         <div className="container">
           <div className="row align-items-center my-5">

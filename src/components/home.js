@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 import Hero from "./hero";
 
@@ -8,6 +9,9 @@ class Home extends Component {
   render() {
     return (
       <React.Fragment>
+        <Helmet>
+          <title>Jesse's Portfolio</title>
+        </Helmet>
         <Hero />
         <section class="my-5">
           <div class="container">
